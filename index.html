@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <img src="imgs/header.jpg" alt="Propaganda da Pizzaria" class="img-container">
+        </div>
+
+        <div class="form-container">
+            
+            <div class="form-header">
+                <p>PIZZA!</p>
+            </div>
+
+            <div class="form-body">
+                <h1 class="form-title">Monte seu combo conosco</h1>
+                <p>Aproveite Hoje o Combo de uma pizza + refri por apenas R$50,00</p>
+
+                <form>
+
+                    <div class="optional-box" required>
+                        <p>Pizza:</p>
+
+                        <input type="radio" name="Sabores" id="frango">
+                        <label for="frango">Frango catupiry</label>
+                        <input type="radio" name="Sabores" id="calabresa">
+                        <label for="calabresa">Calabresa</label>
+                        <input type="radio" name="Sabores" id="4-queijos">
+                        <label for="4-Queijos">4 Queijos</label>
+                        <input type="radio" name="Sabores" id="portuguesa">
+                        <label for="Portuguesa">Portuguesa</label>
+                        <input type="radio" name="Sabores" id="doce">
+                        <label for="doce">Chocolate com morangos</label>
+                    </div>
+
+                    <div class="optional-box">
+                        <p>Opcionais:</p>
+                        <ul class="box-list" >
+                            <li>
+                                <input type="checkbox" name="optional" id="Cebola" value="Cebola ">
+                                <label for="Cebola">Cebola </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional" id="Azeitona" value="Azeitona">
+                                <label for="Azeitona">Azeitona</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional" id="Cheddar" value="Cheddar ">
+                                <label for="Cheddar">Cheddar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional" id="Batata palha" value="Batata palha">
+                                <label for="Batata palha">Batata palha</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional" id="Catupiry" value="Catupiry">
+                                <label for="Catupiry">Catupiry</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional" id="Molhos especiais" value="Molhos especiais">
+                                <label for="Molhos especiais">Molhos especiais</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="optional-box" required>
+                        <p>Bordas:</p>
+
+                        <div>
+                            <input type="radio" name="borda" id="recheada-catu" >
+                            <label for="recheada-catu">Recheada com catupiry</label>
+                            <input type="radio" name="borda" id="recheada-cheddar" >
+                            <label for="recheada-cheddar">Recheada com cheddar</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="borda" id="recheada-choco">
+                            <label for="recheada-choco">Recheada com chocolate</label>
+                            <input type="radio" name="borda" id="no-recheada" >
+                            <label for="no-recheada">Sem recheio</label>
+                        </div>
+
+                    </div>
+
+                    <div class="optional-box">
+                        <p>Bebida:</p>
+
+                        <div>
+                            <input type="radio" name="bebida" id="guarana" >
+                            <label for="guarana">Guaraná Skin</label>
+                            <input type="radio" name="bebida" id="f-uva" >
+                            <label for="f-uva">Fanta Uva Skin</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="bebida" id="f-limao" >
+                            <label for="f-limao">Fanta Limão Skin</label>
+                            <input type="radio" name="bebida" id="f-laranja" >
+                            <label for="f-laranja">Fanta Laranja Skin</label>
+                        </div>
+
+                    </div>
+                    
+                    <div class="campos-container">
+
+                            <label for="nome" class="block">Nome do Cliente:</label>
+                            <input type="text" name="nome" id="nome" class="text-information" minlength="1" maxlength="50" required placeholder="Ex: Futuro_Dev_Davi_DG">
+
+                            <label for="rua" class="block">Endereço</label>
+                            <input type="text" name="rua" id="rua" class="text-information" minlength="1" maxlength="50" required placeholder="Ex: Rua Programação Web">
+
+                            <div class="mini-campos">
+                                <label for="num" >Número:</label>
+                                <input type="number" name="numero-casa" id="num">
+
+                                <label for="contato" class="contact">Contato (81)</label>
+                                <input type="text" id="contato" placeholder="Ex: 9 8242-5993" required minlength="11" maxlength="11" >
+
+                            </div>
+                
+                            <label for="referencia" class="block">Detalhes:</label>
+                            <input type="text" name="referencia" id="referencia" class="text-information" minlength="1" maxlength="50" required placeholder="Ex: Possui simbolo de cobras, azul e amarela">
+
+                            <label for="referencia" class="block">Ponto de referencia</label>
+                            <input type="text" name="referencia" id="referencia" class="text-information" minlength="1" maxlength="50" required placeholder="Ex: Ao lado do instituto HTML e CSS">
+                    </div>
+                    <input type="submit" value="Enviar" class="bnt-container">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
